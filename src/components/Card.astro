@@ -10,13 +10,18 @@ const { href, title, body } = Astro.props;
 
 <a href={href} target="_blank" class="group relative">
   <div
-    class="p-10 border block font-mono border-gray-900 relative z-10 bg-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
+    class="p-10  block font-playfair group-hover:shadow-xl relative z-10 bg-[#F5F0F0] group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
   >
-    {title}
+    <h3 class="font-semibold">{title}</h3>
   </div>
+  
   <div
-    class="bg-gradient-to-tr from-pink-600 to-blue-500 block p-10 absolute w-44 top-0 z-5 group-hover:-translate-x-1 group-hover:translate-y-1 transition-all"
+    class="bg-gradient-to-tr from-green-400 to-emerald-600 w-full block p-10 absolute top-0 z-5 group-hover:-translate-x-1 group-hover:translate-y-1 transition-all"
   >
-    M
+    <h3 class="font-semibold">{title}</h3>
   </div>
 </a>
+
+<style>
+
+</style>
